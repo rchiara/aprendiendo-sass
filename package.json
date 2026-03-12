@@ -1,0 +1,22 @@
+{
+  "name": "sass-udemy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchiara/aprendiendo-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchiara/aprendiendo-sass/issues"
+  },
+  "homepage": "https://github.com/rchiara/aprendiendo-sass#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}
