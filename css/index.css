@@ -1,9 +1,18 @@
-.hero {
-  font-size: 16rem;
+.hero,
+.main {
+  font-size: 2rem;
 }
-
-:root {
-  --color: red;
+.hero .cta,
+.main .cta {
+  color: #000;
+}
+.hero .title,
+.main .title {
+  font-size: 4rem;
+}
+.hero .title span,
+.main .title span {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.css.map */

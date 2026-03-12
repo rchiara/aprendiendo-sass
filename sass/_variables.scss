@@ -3,3 +3,16 @@ $primary: red;
 :root {
   --primary: #{$primary};
 }
+
+$selector: ".hero";
+$propiedad: "font-size";
+$rem: 16;
+$color: red;
+// #{expresion}
+#{$selector} {
+  #{$propiedad}: $rem*1rem;
+}
+
+:root {
+  --color: #{$color};
+}

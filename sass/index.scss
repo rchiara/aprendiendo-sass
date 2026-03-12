@@ -1,12 +1,27 @@
-$selector: ".hero";
-$propiedad: "font-size";
-$rem: 16;
-$color: red;
-// #{expresion}
-#{$selector} {
-  #{$propiedad}: $rem*1rem;
-}
+// .hero {
+//   background-color: steelblue;
+//   nav {
+//     display: flex;
+//     li{
+//       list-style: none;
+//       a{
+//         text-decoration: none;
+//       }
+//     }
+//   }
 
-:root {
-  --color: #{$color};
+// }
+
+.hero,
+.main {
+  font-size: 2rem;
+  .cta {
+    color: #000;
+  }
+  .title {
+    font-size: 4rem;
+    span {
+      font-weight: bold;
+    }
+  }
 }
