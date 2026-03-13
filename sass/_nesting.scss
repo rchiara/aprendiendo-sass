@@ -1,3 +1,50 @@
+.card {
+  color: teal;
+  &__title {
+    text-align: center;
+  }
+
+  &__cta{
+    color: crimson;
+
+    &--green{
+      color: green;
+    }
+  }
+  &:hover{
+    color: royalblue;
+  }
+
+  &--grid{
+    display: grid;
+  }
+}
+
+// .card {
+//   color: teal;
+
+//   a {
+//     color: #000;
+//     &:hover {
+//       color: cyan;
+//     }
+//   }
+
+//   &:hover {
+//     color: crimson;
+//   }
+
+//   &::after {
+//     content: "";
+//   }
+
+//   :not(&){
+//     opacity: 0;
+//   }
+// }
+
+// &:significa selector padre (.card)
+
 // .menu {
 //   .open {
 //     display: block;
