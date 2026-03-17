@@ -1,0 +1,17 @@
+@use "sass:meta";
+@use "sass:list";
+
+// $color: #000;
+// @debug meta.type-of($color);
+
+// $box-shadow: 1px 1px 20px;
+// @debug meta.type-of($box-shadow);
+
+$margen: 10px 20px 40px 30px;
+
+.grid{
+  margin-top: list.nth($margen,1);
+  margin-bottom: list.nth($margen,3);
+  margin-left: list.nth($margen,4);
+  margin-right: list.nth($margen,2);
+}
