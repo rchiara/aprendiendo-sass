@@ -1,0 +1,18 @@
+@use "sass:meta";
+@use "sass:map";
+$colores: (
+  "primary": royalblue,
+  "secondary": crimson,
+  "buttons": teal,
+);
+
+h1{
+  color: map.get($colores,"primary");
+}
+h2{
+  color: map.get($colores,"secondary");
+}
+button{
+  color: map.get($colores,"buttons");
+}
+@debug meta.type-of($colores)
