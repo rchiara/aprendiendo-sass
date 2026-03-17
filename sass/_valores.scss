@@ -1,0 +1,27 @@
+
+
+
+
+
+// @use "sass:math";
+
+// body{
+//   font-size: math.div(4,5);
+// }
+
+
+// $variable: 100;
+// $pixeles: 100px;
+
+// .card {
+//   &__container {
+//     width: 100%;
+//     @debug "el selector es #{&}";
+//   }
+// }
+
+// body {
+//   animation-duration: 30px +60px;
+// }
+
+// @debug "el valor es igual a #{100 * 100}";
