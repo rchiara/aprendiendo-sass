@@ -1,0 +1,18 @@
+// $condicional: true;
+// @debug $condicional;
+
+// $condicional: false;
+
+// @if($condicional) {
+//   .grid {
+//     display: grid;
+//   }
+// }
+
+// @else {
+//   .flexbox {
+//     display: flex;
+//   }
+// }
+
+@debug hola!=mundo;
