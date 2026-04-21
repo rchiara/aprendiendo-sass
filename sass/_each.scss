@@ -1,0 +1,25 @@
+//recorrer listas
+// $margenes : 1 2 3 4 5;
+
+// @each $margen in $margenes {
+//   .m-#{$margen} {
+//     margin: $margen*1em;
+//   }
+// }
+
+//recorrer mapas
+$estilos: (
+  "primary": crimson,
+  "secondary":steelblue,
+  "shadow": 1px 1px solid #000
+);
+
+@each $clave , $valor in $estilos {
+  .#{$clave} {
+    @if($clave !='shadow') {
+      color: $valor;
+    }@else{
+      box-shadow: $valor;
+    }
+  }
+}

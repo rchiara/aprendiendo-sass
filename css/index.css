@@ -1,41 +1,13 @@
-.selector-10 {
+.primary {
   color: crimson;
 }
 
-.selector-9 {
-  color: crimson;
+.secondary {
+  color: steelblue;
 }
 
-.selector-8 {
-  color: crimson;
-}
-
-.selector-7 {
-  color: crimson;
-}
-
-.selector-6 {
-  color: crimson;
-}
-
-.selector-5 {
-  color: crimson;
-}
-
-.selector-4 {
-  color: crimson;
-}
-
-.selector-3 {
-  color: crimson;
-}
-
-.selector-2 {
-  color: crimson;
-}
-
-.selector-1 {
-  color: crimson;
+.shadow {
+  box-shadow: 1px 1px solid #000;
 }
 
 /*# sourceMappingURL=index.css.map */
