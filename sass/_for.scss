@@ -1,0 +1,6 @@
+// se puede poner "to" (el valorlimite menos 1) o "through" (incluyendo el valor limite)
+@for $iterador from 10 through 1 {
+  .selector-#{$iterador}{
+   color: crimson; 
+  }
+}
