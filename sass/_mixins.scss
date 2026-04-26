@@ -51,30 +51,45 @@
 //   // @include grid-generator('boton', 3, -1,false);
 //   // @include grid-generator($columna-t: 4, $selector: grid, $columna-i: 1, $validar: false);
 // }
+// ---------------------------------------------------------
+// @mixin addImage($img, $repeat, $size) {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
 
-@mixin addImage($img, $repeat, $size) {
-  position: fixed;
-  top: 0;
-  left: 0;
+//   background: {
+//     image: url($img);
+//     repeat: $repeat;
+//     size: $size;
+//   }
 
-  background: {
-    image: url($img);
-    repeat: $repeat;
-    size: $size;
-  }
+//   animation: {
+//     duration: 1s;
+//     name: show;
+//     delay: .5s;
+//   }
 
-  animation: {
-    duration: 1s;
-    name: show;
-    delay: .5s;
-  }
+//   margin: {
+//     top: 0px;
+//     left: 0px;
+//   }
+// }
 
-  margin: {
-    top: 0px;
-    left: 0px;
+// .hero {
+//   @include addImage('uno.png', no-repeat, cover);
+// }
+// -------------------------------------------------------
+@mixin addTransition($propiedad, $valor, $selectores...) {
+  @each $selector in $selectores {
+    #{$selector} {
+      #{$propiedad}: $valor;
+
+      &:hover {
+        #{$propiedad}: unset;
+      }
+    }
   }
 }
 
-.hero {
-  @include addImage('uno.png', no-repeat, cover);
-}
+// @include addTransition(opacity, 0, h1, h2, h3, a);
+@include addTransition(opacity, 0, '.hero', '.cta', h2, h3);
