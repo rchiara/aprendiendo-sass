@@ -1,5 +1,15 @@
-.hero__grid {
-  grid-column: 1/4;
+.hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("uno.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-duration: 1s;
+  animation-name: show;
+  animation-delay: 0.5s;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 /*# sourceMappingURL=index.css.map */
