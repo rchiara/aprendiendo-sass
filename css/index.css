@@ -1,13 +1,16 @@
-.primary {
-  color: crimson;
+.card {
+  transition-property: color;
+  transition-duration: 3s;
 }
 
-.secondary {
-  color: steelblue;
+.nav {
+  transition-property: clip-path;
+  transition-duration: 2s;
 }
 
-.shadow {
-  box-shadow: 1px 1px solid #000;
+.footer {
+  transition-property: margin;
+  transition-duration: 1s;
 }
 
 /*# sourceMappingURL=index.css.map */
