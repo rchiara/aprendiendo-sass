@@ -1,16 +1,15 @@
-.card {
-  transition-property: color;
-  transition-duration: 3s;
-}
-
-.nav {
-  transition-property: clip-path;
-  transition-duration: 2s;
+.header {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 
 .footer {
-  transition-property: margin;
-  transition-duration: 1s;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(columnas, 1fr);
+  gap: gutters;
 }
 
 /*# sourceMappingURL=index.css.map */

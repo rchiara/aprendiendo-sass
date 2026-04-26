@@ -1,0 +1,36 @@
+// @mixin center {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .header {
+//   @include center;
+// }
+
+// .footer {
+//   @include center;
+// }
+
+// .card {
+//   @include center;
+// }
+// -------------------------------------
+// mixins con argumentos
+@mixin crear-grid($rows, $columns, $gap) {
+  display: grid;
+  grid-template-rows: repeat($rows, 1fr);
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+$filas: 5;
+$columnas: 5;
+$gutters: 30px;
+
+.header {
+  @include crear-grid(6, 5, 20px);
+}
+.footer{
+  @include crear-grid($filas,columnas , gutters);
+}
