@@ -1,15 +1,5 @@
-.header {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-.footer {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(columnas, 1fr);
-  gap: gutters;
+.hero__grid {
+  grid-column: 1/4;
 }
 
 /*# sourceMappingURL=index.css.map */

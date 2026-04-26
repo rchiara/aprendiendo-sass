@@ -17,20 +17,37 @@
 // }
 // -------------------------------------
 // mixins con argumentos
-@mixin crear-grid($rows, $columns, $gap) {
-  display: grid;
-  grid-template-rows: repeat($rows, 1fr);
-  grid-template-columns: repeat($columns, 1fr);
-  gap: $gap;
+// @mixin crear-grid($rows, $columns, $gap) {
+//   display: grid;
+//   grid-template-rows: repeat($rows, 1fr);
+//   grid-template-columns: repeat($columns, 1fr);
+//   gap: $gap;
+// }
+
+// $filas: 5;
+// $columnas: 5;
+// $gutters: 30px;
+
+// .header {
+//   @include crear-grid(6, 5, 20px);
+// }
+// .footer{
+//   @include crear-grid($filas,columnas , gutters);
+// }
+
+@mixin grid-generator($validar: true, $selector, $columna-i: 1, $columna-t: 1) {
+  @if($validar) {
+    display: grid;
+  }
+
+  &__#{$selector} {
+    grid-column: #{$columna-i}/#{$columna-t};
+  }
 }
 
-$filas: 5;
-$columnas: 5;
-$gutters: 30px;
-
-.header {
-  @include crear-grid(6, 5, 20px);
-}
-.footer{
-  @include crear-grid($filas,columnas , gutters);
+.hero {
+  // @include grid-generator('img');
+  // @include grid-generator('title', 3, -1,false);
+  // @include grid-generator('boton', 3, -1,false);
+  @include grid-generator($columna-t: 4, $selector: grid, $columna-i: 1, $validar: false);
 }
