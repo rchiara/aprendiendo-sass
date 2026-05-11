@@ -1,17 +1,9 @@
-.hero {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(6, 1fr);
+.title {
+  font-size: 2.5em;
 }
-@media (max-width: 500px) {
-  .hero {
-    grid-template-rows: repeat(3, 1fr);
-    color: #fff;
-    background-color: crimson;
-  }
-  .hero__title {
-    background-color: #fff;
-  }
+
+.hero__title {
+  font-size: 6.25em;
 }
 
 /*# sourceMappingURL=index.css.map */
