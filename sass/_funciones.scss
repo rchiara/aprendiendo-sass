@@ -1,11 +1,29 @@
 @use 'sass:math';
 
-@function pixelesToEm($pixeles) {
-  $unidad : math.div($pixeles, 1px);
-  $resultado: math.div($unidad, 16);
-  @return $resultado*1em;
+// @function pixelesToEm($font-size:16px,$pixeles ) {
+//   $unidad : math.div($pixeles, 1px);
+//   $current-font: math.div($font-size,1px);
+
+//   $resultado: math.div($unidad, $current-font);
+
+//   @return $resultado*1em;
+// }
+
+// .title {
+//   $font-size: 32px;
+//   font-size: pixelesToEm($pixeles:20px);
+// }
+
+@function sumarElementos($valores...) {
+  $suma : 0*1px;
+
+  @each $valor in $valores {
+    $suma: $suma +$valor;
+  }
+
+  @return $suma;
 }
 
-.title {
-  font-size: pixelesToEm(40px);
+.suma {
+  font-size: sumarElementos(40, 50, 90);
 }
