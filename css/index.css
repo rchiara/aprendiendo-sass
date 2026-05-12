@@ -1,5 +1,10 @@
-.suma {
-  font-size: 180px;
+.main {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.hero {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=index.css.map */
