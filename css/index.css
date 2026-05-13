@@ -1,10 +1,5 @@
 .main {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.hero {
-  display: inline-block;
+  color: steelblue;
 }
 
 /*# sourceMappingURL=index.css.map */
