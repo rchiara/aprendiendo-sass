@@ -1,5 +1,10 @@
-.main {
-  color: teal;
+.body {
+  margin: 10px 9px 8px 7px;
+  padding: 10px 20px 30px 40px;
+}
+
+.hero {
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
