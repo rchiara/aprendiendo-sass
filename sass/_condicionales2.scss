@@ -42,16 +42,16 @@ $global: red;
 //   @include crearLayout(inline-block, 6)
 // }
 
-@mixin elegirColor($numero) {
-  @if($numero==1) {
+@mixin elegirColor($numero, $primary) {
+  @if($numero==1 and $primary==true) {
     color: crimson;
   }
 
-  @else if($numero==2) {
+  @else if($numero==2 or $primary) {
     color: steelblue;
   }
 
-  @else if($numero==3) {
+  @else if(not $primary) {
     color: teal;
   }
 
@@ -61,5 +61,5 @@ $global: red;
 }
 
 .main {
-  @include elegirColor(2)
+  @include elegirColor(3, false);
 }
