@@ -1,22 +1,41 @@
 // --funcion para modificar mapas
 @use 'sass:map';
+@use 'sass:meta';
+
 $textos: (
-  'titulo': 4,
-  'subtitulo':3,
-  'parrafo':1,
-  'cta':1.5
+  'titulo': 4em,
+  'subtitulo':3em,
+  'parrafo':1em,
+  'cta':1.5em
 );
-$newMapa: map.set($textos, 'cta', 8);
+
+$colores: (
+  'primary':#000,
+  'secondary':#f00,
+  'titulo':steelblue
+);
+
+// $newMapa: map.set($textos, 'cta', 8);
+
+$estilosGenerales: map.merge($textos, $colores);
 
 @mixin recorrerMap($mapa) {
   @each $clave, $valor in $mapa {
     .#{$clave} {
-      font-size: $valor*1em;
+      @if(meta.type-of($valor)==color) {
+        color: $valor;
+      }
+
+      @else {
+        font-size: $valor;
+      }
     }
   }
 }
 
-$textos2: map.set($textos, 'copy', 1);
-$textos2: map.set($textos, 'titulo', 8);
+@include recorrerMap($estilosGenerales);
 
-@include recorrerMap($textos2);
+// $textos2: map.set($textos, 'copy', 1);
+// $textos2: map.set($textos, 'titulo', 8);
+
+// @include recorrerMap($textos2);
