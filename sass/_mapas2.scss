@@ -1,0 +1,22 @@
+// --funcion para modificar mapas
+@use 'sass:map';
+$textos: (
+  'titulo': 4,
+  'subtitulo':3,
+  'parrafo':1,
+  'cta':1.5
+);
+$newMapa: map.set($textos, 'cta', 8);
+
+@mixin recorrerMap($mapa) {
+  @each $clave, $valor in $mapa {
+    .#{$clave} {
+      font-size: $valor*1em;
+    }
+  }
+}
+
+$textos2: map.set($textos, 'copy', 1);
+$textos2: map.set($textos, 'titulo', 8);
+
+@include recorrerMap($textos2);
