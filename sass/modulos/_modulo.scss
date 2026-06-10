@@ -1,0 +1,7 @@
+@use "colores";
+@use "colores2";
+
+.hero {
+  color: colores.$primary;
+  background-color: colores2.$primary ;
+}

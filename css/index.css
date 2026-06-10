@@ -1,25 +1,6 @@
-.titulo {
-  color: steelblue;
-}
-
-.subtitulo {
-  font-size: 3em;
-}
-
-.parrafo {
-  font-size: 1em;
-}
-
-.cta {
-  font-size: 1.5em;
-}
-
-.primary {
-  color: #000;
-}
-
-.secondary {
-  color: #f00;
+.hero {
+  color: red;
+  background-color: steelblue;
 }
 
 /*# sourceMappingURL=index.css.map */
