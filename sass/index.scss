@@ -1,5 +1,6 @@
 @use "modulos/modulo" as *;
-@use "modulos/colores" as *;
+@use "modulos/colores" with ($primary: steelblue,
+  $secondary :yellow, );
 @use "sass:map";
 
 $textos: (
@@ -9,10 +10,10 @@ $textos: (
   'cta':1.5em
 );
 
-$estilosGenerales: map.merge($textos,$colores);
-@include recorrerMap($estilosGenerales);
+$estilosGenerales: map.merge($textos, $colores);
+// @include recorrerMap($estilosGenerales);
 
 body {
-  color: $primary;
-  font-size: sumarElementos(3, 4, 5, 6);
+  color: colores.$primary;
+  background-color: colores.$secondary;
 }
