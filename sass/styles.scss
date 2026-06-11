@@ -12,7 +12,6 @@ $textos: (
 $estilosGenerales: map.merge($textos, index.$colores);
 @include index.recorrerMap($estilosGenerales);
 
-body {
-  font-size: index.$title;
-  color: index.$primary;
+body{
+  font-size: index.sumarElementos(5+3);
 }
