@@ -1,4 +1,4 @@
-@use "modulos/index";
+@use "modulos/index" ;
 
 @use "sass:map";
 
@@ -12,6 +12,7 @@ $textos: (
 $estilosGenerales: map.merge($textos, index.$colores);
 @include index.recorrerMap($estilosGenerales);
 
-body{
+body {
   font-size: index.sumarElementos(5+3);
+  color: index.$primary;
 }

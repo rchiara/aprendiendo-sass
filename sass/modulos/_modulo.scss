@@ -1,5 +1,9 @@
 @use "sass:map";
 @use "sass:meta";
+
+$primary: red !default;
+
+
 $textos: (
   'titulo': 4em,
   'subtitulo':3em,
