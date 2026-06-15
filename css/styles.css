@@ -1,22 +1,12 @@
-.textos, .hero__copy, .hero__title {
+.textos, h1, .hero__title {
   line-height: 1.7;
   letter-spacing: 1.5;
   text-align: left;
   overflow-wrap: break-word;
 }
-.textos:hover, .hero__copy:hover, .hero__title:hover {
-  text-decoration: underline;
-}
-.textos::before, .hero__copy::before, .hero__title::before {
-  content: "Hola";
-}
 
 .hero__title {
   font-size: 2rem;
-}
-
-.hero__copy {
-  font-size: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
