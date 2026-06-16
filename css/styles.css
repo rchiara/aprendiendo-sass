@@ -1,11 +1,6 @@
-.textos, h1, .hero__title {
-  line-height: 1.7;
-  letter-spacing: 1.5;
-  text-align: left;
-  overflow-wrap: break-word;
-}
-
-.hero__title {
+.card__warning, .hero__error {
+  color: crimson;
+  font-weight: bold;
   font-size: 2rem;
 }
 

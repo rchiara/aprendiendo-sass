@@ -1,11 +1,14 @@
-.textos {
-  line-height: 1.7;
-  letter-spacing: 1.5;
-  text-align: left;
-  overflow-wrap: break-word;
+%error {
+  color: crimson;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-.hero__title {
-  @extend .textos;
-  font-size: 2rem;
+%small {
+  font-size: .5rem;
+  font-weight: 300;
+}
+
+.hero__error{
+  @extend %error;
 }

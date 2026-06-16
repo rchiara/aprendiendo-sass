@@ -1,5 +1,5 @@
 @use "extend";
 
-h1 {
-  @extend .textos;
+.card__warning{
+  @extend %error;
 }
